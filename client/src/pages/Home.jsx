@@ -61,7 +61,7 @@ const Home = () => {
         <div className="flex justify-around w-full font-serif  flex-row  bg-white p-4 mt-6 mr-10">
           <div className="flex flex-col gap-2">
             <span className="font-semibold">4+</span>
-            <span className="text-sm text-gray-500">Languages Know</span>
+            <span className="text-sm text-gray-500">Languages</span>
           </div>
           <div className="flex flex-col gap-2">
             <span className="font-semibold">5+</span>
@@ -69,12 +69,12 @@ const Home = () => {
           </div>
           <div className="flex flex-col gap-2">
             <span className="font-semibold">50+</span>
-            <span className="text-sm text-gray-500">Packages Know</span>
+            <span className="text-sm text-gray-500">Packages</span>
           </div>
         </div>
       </div>
-      <div className="md:grid place-items-center">
-        <div className="m-auto mt-8 w-full min-h-screen md:mt-24 md:w-96 md:mr-0 rounded-lg ">
+      <div className="mb-8 md:grid place-items-center">
+        <div className="m-auto mt-8 w-full md:mt-24 md:w-96 md:mr-0 rounded-lg ">
           <img
             className="self-center object-center w-full bg-inherit rounded-lg"
             src={portfolioImage}

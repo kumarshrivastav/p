@@ -51,7 +51,7 @@ const About = () => {
   };
   return (
     <div
-      className={`grid gap-4 mt-4 md:grid-cols-2 ${
+      className={`grid gap-4 md:grid-cols-2 ${
         theme === "dark" ? "bg-gray-600" : "bg-gray-100"
       } mx-4 md:mx-20`}
       id="about"
@@ -64,7 +64,7 @@ const About = () => {
             alt="user image"
           />
         </div>
-        <div className="absolute inset-y-80 inset-x-32 bg-white flex flex-row gap-2 items-center  p-1 h-10 w-max md:inset-x-48 text-black">
+        <div className="absolute inset-y-80 inset-x-20  bg-white flex flex-row gap-2 items-center  p-1 h-10 w-max md:inset-x-48 text-black">
           {socialIcons.map((media) => (
             <a
               href={media.url}
@@ -108,10 +108,10 @@ const About = () => {
           ensuring that I stay at the forefront of the ever-evolving tech
           landscape.
         </p>
-        <div className="flex flex-row gap-10 my-4">
+        <div className="flex flex-row gap-2 justify-between md:justify-start w-full my-4">
           <Button
             onClick={handleResumeClick}
-            className="rounded-none bg-customeButtonColor font-serif hover:cursor-pointer hover:!bg-white hover:!text-customeButtonColor hover:border-2 hover:border-textColor"
+            className="rounded-none  bg-customeButtonColor font-serif hover:cursor-pointer hover:!bg-white hover:!text-customeButtonColor hover:border-2 hover:border-textColor"
           >
             <a
               href={
