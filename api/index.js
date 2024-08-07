@@ -19,9 +19,9 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
 app.use('/api/visitors',visitorRouter)
 app.use('/api/contactus',contactusRouter)
-app.use(express.static(path.join(__dirname,'/portfolio-vite/dist')))
+app.use(express.static(path.join(__dirname,'/client/dist')))
 app.get('*',(req,res)=>{
-    res.sendFile(path.join(__dirname,'portfolio-vite','dist','index.html'))
+    res.sendFile(path.join(__dirname,'client','dist','index.html'))
 })
 const server=app.listen(8000,()=>{
     console.log(`Server started at http://localhost:${server.address().port}`)
