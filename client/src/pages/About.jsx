@@ -119,6 +119,7 @@ const About = () => {
               }
               target={verified && "__blank"}
               rel="noreferrer"
+              className="text-[13px] md:text-lg"
             >
               Hire Me
             </a>{" "}
@@ -132,7 +133,7 @@ const About = () => {
           >
             <RiDownload2Fill size={20} className="" />
             <a
-              className="font-serif"
+              className="font-serif text-sm md:text-lg"
               href={verified && Resume}
               download="ANKIT_KUMAR_RESUME"
             >
