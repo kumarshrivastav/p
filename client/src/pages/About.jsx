@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Button } from "flowbite-react";
 import { RiDownload2Fill } from "react-icons/ri";
-import Resume from "../assets/docs/IT_Resume.pdf";
+import Resume from "../assets/docs/IT.pdf";
 import socialIcons from "../utils/SocialMediaList";
 import FingerPrintJS from "@fingerprintjs/fingerprintjs";
 import PopUp from "../components/PopUp";
@@ -115,7 +115,7 @@ const About = () => {
           >
             <a
               href={
-                verified && "https://api.whatsapp.com/send?phone=918227870013"
+                verified && "https://api.whatsapp.com/send?phone=919630775583"
               }
               target={verified && "__blank"}
               rel="noreferrer"

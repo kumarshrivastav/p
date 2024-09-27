@@ -2,6 +2,7 @@ import { Button } from "flowbite-react";
 import React, { useContext } from "react";
 import Typewriter from "typewriter-effect";
 import { ThemeContext } from "../components/ThemeContext";
+import {Link} from "react-router-dom"
 import portfolioImage from "/images/pimage.jpeg"
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -55,9 +56,11 @@ const Home = () => {
           I’ve worked on. If you’d like to collaborate or just want to say
           hello, don’t hesitate to get in touch!
         </p>
-        <Button className="mt-3 font-serif font-semibold hover:!bg-customeButtonColor rounded-none bg-customeButtonColor md:mt-8">
+        <div className="mt-5">
+        <Link to={`mailto:ankitkumar.mp.5583@gmail.com?subject:Regarding to collaborate with me for some project works.`} className="mt-5 border-2 text-white p-2 font-serif font-semibold hover:!bg-customeButtonColor rounded-none bg-customeButtonColor md:mt-8">
           Say Hello
-        </Button>
+        </Link>
+        </div>
         <div className="flex justify-around w-full font-serif  flex-row  bg-white p-4 mt-6 mr-10">
           <div className="flex flex-col gap-2">
             <span className="font-semibold">4+</span>
